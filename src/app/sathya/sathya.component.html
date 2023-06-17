@@ -1,0 +1,24 @@
+<h1>{{ pagetitle}}</h1>
+<img src={{imageURL}} alt="sathya" width="200px" height="100px">
+<button disabled={{btnStatus}}>Click</button>
+
+
+<h1>Property Binding</h1>
+<img [src]="imageURL1" width="300px" height="200px">
+<button [disabled]="btnStatus">Click</button>
+
+<!-- eventBinding -->
+<button (click)="changeTitle()">Change Title</button>
+<br>
+
+<!-- ngModel -->
+<input type="text" class="text" [(ngModel)]="username"/>
+<h4>Welcome  {{username}}</h4>
+
+<input [(ngModel)]="name">
+<button (click)="sd()">Show Data</button>
+<h6>Datashowing in Console</h6>
+
+
+
+ 
